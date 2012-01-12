@@ -42,7 +42,7 @@ Clone this repository, then run the application in one of the following ways.
 
     [These instructions](http://devcenter.heroku.com/articles/scala#store_your_app_in_gitfg) should work
     out of the box. 
-    (This project already includes a suitable .gitignore file.) Upon pushing to the remote repository, 
+    (This project already includes a suitable .gitignore file.) Upon pushing to the remote Heroku repository, 
     the last few lines of the output should look like this.
 
                ...
