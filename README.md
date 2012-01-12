@@ -40,12 +40,9 @@ Clone this repository, then run the application in one of the following ways.
 
 - On Heroku
 
-    [These instructions](http://devcenter.heroku.com/articles/scala#store_your_app_in_gitfg) should work
-    out of the box. 
-    (This project already includes a suitable .gitignore file.) Upon pushing to the remote Heroku repository, 
-    the last few lines of the output should look like this.
+    [These instructions](http://devcenter.heroku.com/articles/scala#deploy_to_herokucedar) should
+    work out of the box. The last few lines of the output should look like this.
 
-               ...
                [success] Total time: 0 s, completed Jan 12, 2012 4:31:05 AM
         -----> Discovering process types
                Procfile declares types -> web
