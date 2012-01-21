@@ -39,6 +39,8 @@ object Dependencies {
     val akka      = "1.2"
     val spray     = "0.9.0-SNAPSHOT"
     val sprayCan  = "0.9.2-SNAPSHOT"
+    val parboiled = "1.0.2"
+    val mimepull  = "1.6"
     val specs2    = "1.6.1"
     val slf4j     = "1.6.1"
     val logback   = "0.9.29"
@@ -46,10 +48,10 @@ object Dependencies {
 
   object Compile {
     val akkaActor   = "se.scalablesolutions.akka" %  "akka-actor"      % V.akka      % "compile"
-    val parboiled   = "org.parboiled"             %   "parboiled-scala" % "1.0.2"     % "compile"
-    val mimepull    = "org.jvnet"                 %   "mimepull"       % "1.6"       % "compile"
+    val parboiled   = "org.parboiled"             %  "parboiled-scala" % V.parboiled % "compile"
+    val mimepull    = "org.jvnet"                 %  "mimepull"        % V.mimepull  % "compile"
     val sprayServer = "cc.spray"                  %  "spray-server"    % V.spray     % "compile"
-    val sprayCan    = "cc.spray.can"              %   "spray-can"      % V.sprayCan  % "compile"
+    val sprayCan    = "cc.spray.can"              %  "spray-can"       % V.sprayCan  % "compile"
   }
 
   object Test {
