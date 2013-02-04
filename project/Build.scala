@@ -32,13 +32,14 @@ object Build extends sbt.Build {
 object Dependencies {
   val resolutionRepos = Seq(
     "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
-    ScalaToolsSnapshots
+    ScalaToolsSnapshots,
+    "Spray repo" at "http://repo.spray.io"
   )
 
   object V {
     val akka      = "1.2"
-    val spray     = "0.9.0-SNAPSHOT"
-    val sprayCan  = "0.9.2-SNAPSHOT"
+    val spray     = "0.9.0"
+    val sprayCan  = "0.9.2"
     val parboiled = "1.0.2"
     val mimepull  = "1.6"
     val specs2    = "1.6.1"
@@ -51,7 +52,7 @@ object Dependencies {
     val parboiled   = "org.parboiled"             %  "parboiled-scala" % V.parboiled % "compile"
     val mimepull    = "org.jvnet"                 %  "mimepull"        % V.mimepull  % "compile"
     val sprayServer = "cc.spray"                  %  "spray-server"    % V.spray     % "compile"
-    val sprayCan    = "cc.spray.can"              %  "spray-can"       % V.sprayCan  % "compile"
+    val sprayCan    = "cc.spray"                  %  "spray-can"       % V.sprayCan  % "compile"
   }
 
   object Test {
